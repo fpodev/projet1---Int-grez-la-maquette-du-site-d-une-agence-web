@@ -1,0 +1,691 @@
+/*==============================fonts=============================*/
+@font-face {
+    font-family: "Roboto-Bold";            
+        src: url("fonts/Roboto-Bold.ttf") format("truetype"),
+             url("fonts/roboto-bold-webfont.woff2") format('woff2'),
+             url("fonts/roboto-bold-webfont.woff") format('woff');
+   font-weight: normal;
+   font-style: normal;
+} 
+@font-face{
+    font-family: "Roboto-Regular";
+        src: url("fonts/Roboto-Regular.ttf") format("truetype"),
+        url("fonts/roboto-regular-webfont.woff2") format('woff2'),
+        url("fonts/roboto-regular-webfont.woff") format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face{
+    font-family: "FontAwesome";
+        src: url("fonts/FontAwesome.otf") format("otf"),
+        url("fonts/fontawesome-webfont.eot") format("eot"),
+        url("fonts/fontawesome-webfont.svg") format("svg"),
+        url("fonts/fontawesome-webfont.ttf") format("truetype"),
+        url("fonts/fontawesome-webfont.woff") format("woff");
+}
+/*==================================================================*/            
+
+body{       
+    margin:0;
+    padding:0;
+}
+h1, h2{
+    font-family:"roboto-Bold";
+    font-size: 30px;    
+}
+h4, h5, h3, p, li a{
+    font-family: "Roboto-Regular";
+}   
+h2{
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+#services:target, #nProjet:target, #contact:target{
+    padding-top: 82px;
+    margin-top: -82px;   
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;    
+    color:#666666;    
+}
+/*=====header=====*/
+.tete{  
+    display:flex;  
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+    background-color: #fff;
+    position:fixed;    
+    width: 100%;
+    height: 82px;           
+}  
+li{
+    display: inline-block;
+    padding: 10px;         
+}   
+.menu li a:hover{             
+    border-top: 3px solid #5cadd3;  
+    padding-top: 29px;    
+}
+/*=====fin header=====*/
+/*=====section slider=====*/
+#slider{ 
+    position: relative;   
+    width: 100%;           
+    padding-top: 84px;    
+    overflow: hidden; 
+}  
+.slides{
+    position: relative;
+    width: 100%;    
+} 
+.slides img{ 
+    z-index: 1;  
+    position: relative; 
+    width: 100%;    
+}
+.slides .fas::before{
+    z-index: 1; 
+    display: inline-flex;
+    position: absolute;
+    font-style: normal;
+    font-variant: normal;
+    height: 60px;
+    width: 30px;
+    font-size: 15px; 
+    color: #fff;        
+    background-color: #414246; 
+    font-family: "FontAwesome";
+    top: calc( 50% - 30px);   
+    align-items: center;
+    justify-content: center; 
+    opacity: 0.7; 
+}
+.fa-chevron-left::before{     
+    content:"\f053";  
+    left: 0;  
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;        
+}   
+.fa-chevron-right::before{            
+    content:"\f054";        
+    right: 0px;      
+    border-bottom-left-radius: 100px;  
+    border-top-left-radius: 100px;    
+}
+.slideBar{  
+    z-index: 1; 
+    position: relative;    
+    border: 2px solid #62abd2;    
+    width: 14%;    
+    bottom: 8px;     
+} 
+.slo{  
+    z-index: 1; 
+    position: absolute;      
+    color: #fff;     
+    top: 22%;
+    left: 170px;
+}  
+.slo .slogan{    
+    color: #62abd2;
+}
+.btn{  
+    z-index: 1;
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+    border: 2px solid transparent;
+    background-color: #62abd2;
+    padding: 0px 10px 0px 10px;       
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px #4c92ba;    
+    left: 16%;
+    height: 35px;
+    width: 100px;
+    font-family: "Roboto-Bold";
+}  
+.btn a{
+    text-decoration: none;
+    color: #f3f9fc;    
+}  
+/*=====fin slider=====*/
+/*=====section service=====*/
+#services{
+    position: relative;
+    top: 0px;
+}   
+.ns{  
+    display: flex;
+    flex-direction:column;    
+    text-align: center; 
+}    
+.ns p{    
+    margin: 10px;
+}         
+.divider{    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    border: 1px solid #ebebeb;
+    width: 142px;      
+}
+.bulle{
+    position: relative;    
+    border: 4px solid #fff;  
+    border-radius: 15px;
+    width: 12px;
+    height: 12px;
+    background: #5cadd3;
+    margin-left:auto;
+    margin-right: auto;  
+    bottom: 11px;
+    margin-bottom: -0.7%;
+}
+#desktop{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;    
+}
+#desktop img{
+    height: 300px;
+}
+.details{ 
+    position: relative;     
+    margin-top: 50px;   
+    width: 455px;    
+}
+.details p{
+    line-height: 28px;      
+}
+.details h3{     
+    height: 10px;         
+}
+.ux, .ui, .seo{
+    display: block;
+    height: 130px;  
+    padding: 4px;
+}
+#desktop .fas::before{    
+    display: flex;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-variant: normal;
+    font-size: 25px; 
+    width: 25px ;
+    height: 25px;
+    color: #5cadd3;
+    border: 1px solid #ebebeb;
+    border-radius: 100%;
+    padding: 20px; 
+    bottom:  123px;
+    right: 100px;   
+    align-items: center;
+    justify-content: center; 
+}  
+.fa-chart-line::before{  
+    position: relative;   
+    content:"\f201";       
+}
+.fa-cubes::before{    
+    position: relative;
+    content:"\f1b3";    
+}   
+.fa-chart-pie::before{
+    position: relative;
+    content:"\f200";
+}   
+.bulle1{   
+    content:"\f111";   
+    position: relative;
+    border: 4px solid #fff;    
+    border-radius: 100%;  
+    background: #5cadd3;  
+    width: 10px; 
+    height: 10px; 
+    bottom: 165px;
+    right: 42px;          
+} 
+/*=====fin services=====*/
+/*=====projets=====*/  
+#projets{
+    display: flex; 
+    flex-direction: column;   
+    text-align: center;
+    background-color: #f5f5f5;   
+    margin-top: 15px;
+    position: relative;
+    height: 100%;
+    overflow:hidden;
+} 
+#projets p{      
+    margin: 10px 0px 50px 0px;
+}
+#nProjet nav, #nProjet ul{ 
+    display: flex;         
+    width: 340px;   
+    padding: 0px;  
+    margin-left:auto; 
+    margin-right:auto;  
+    justify-content: center;
+}
+#nProjet nav{   
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;  
+    margin-bottom: 25px;  
+    border: 1px solid transparent;
+    border-radius: 5px;    
+}
+#nProjet li{   
+    padding: 0px;
+}
+#nProjet a{
+    display: inline-flex; 
+    justify-content: center;  
+    align-items: center;    
+    width: 85px;    
+    height: 40px; 
+    border-bottom: 4px solid #e4e4e4;
+    padding-left: 0px;
+    background: #e4e4e4;
+}
+#nProjet li:first-child a{
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+} 
+#nProjet li:last-child a{
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+}
+#nProjet li a:hover{ 
+    background-color: #62abd2;  
+    color: white;    
+    border-bottom: 4px solid #4d8aac;        
+}  
+#nProjet li a:hover::before{    
+    content:"";   
+    position: relative;    
+    top: 25px;
+    border-top: 10px solid #4d8aac;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: 50%;
+    padding: 0px; 
+    margin-left: -20px;
+}
+#portfolio {     
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   flex-wrap: wrap; 
+   margin-top: 20px; 
+}  
+#portfolio figure{         
+    position: relative;    
+    margin: 2%;  
+    height: 165px;
+} 
+#portfolio figure img{
+    width: 250px;  
+   
+}
+#portfolio figcaption{
+    position: relative;     
+    line-height: 0px; 
+    text-align: left;
+    color: white;
+    bottom: 64px;
+    height: 60px;
+    opacity:0;
+    padding-left: 10px;      
+} 
+#portfolio p{
+    font-size: 15px;    
+} 
+#portfolio .fa-eye::before{
+    position: relative;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-variant: normal;
+    content:"\f06e";
+    color: #fff;
+    background-color: #5cadd3;
+    padding:10px;
+    border-radius: 100%;
+    border: 2px solid #ebebeb;
+    left: 190px;
+}
+#portfolio figure:hover > figcaption{
+    background-color: rgba(53, 32, 32, 0.5);   
+    opacity: 1;
+    
+}  
+/*=====fin projet=====*/
+/*=====contatc=====*/
+#contact{    
+    margin-top: 0px;   
+    background-color: #4d8aac;
+    height: 650px;
+    overflow: hidden;
+}
+#contact iframe{       
+    opacity: 0.6;
+    width: 100%;
+    height: 650px;
+    border: 0;
+}
+#contact .formulaire{
+    position:relative;
+    display: flex;
+    flex-direction: column;  
+    float: right;
+    background-color: rgba(255, 255, 255, 0.6);  
+    width: 340px;
+    height: 475px;
+    margin-right: 135px;
+    bottom: 600px;          
+}
+.info{
+    padding-left: 18px;       
+}
+.info h3{
+    font-size: 20px;
+    margin-bottom: -5px;    
+}
+.info h4{
+   margin-top: 12px;
+   font-size: 15px;
+   margin-bottom: 0px;
+}
+.info p{    
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;    
+} 
+.formulaire form{
+    display: flex;
+    flex-direction: column;    
+    margin-right: auto;
+    margin-left: auto;       
+}
+form input{       
+    width: 295px;
+    height: 25px;
+    margin-bottom: 15px;  
+    font-size: 14px;    
+    border-radius: 5px;  
+}
+form textarea{    
+    padding-left: 6px;
+    width: 290px;
+    height: 155px;    
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+form .envoie{          
+    border: none;
+    border-radius: 3px;
+    width: 105px;
+    height:30px;
+    color: #fff;
+    background-color: #62abd2;
+    box-shadow: 0px 4px 0px 0px #4c92ba;
+    padding: 0;
+    font-family: "Roboto-Bold";
+}
+/*=====fin contact=====*/
+/*=====responsive=====*/
+@media screen and (min-width: 1575px){
+    .slides .fas::before {
+        top: calc( 45% - 30px);
+    }
+    .slo{
+        top: 24%;
+    }
+    #portfolio{
+        margin-top: 0px;
+    }
+    #portfolio figure{
+        width: 19%;   
+        height: 220px;     
+    }
+    #portfolio figure img{
+        width: 100%;
+    }
+    #portfolio .fa-eye::before{
+        left: 235px;
+    }
+}
+@media screen and (max-width: 900px){
+    .slo{
+        top: 9%;
+        left: 120px;        
+    }     
+    .details{
+        width: 320px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    .ux, .ui, .seo{
+        height: 150px;
+    }
+    #desktop .fas::before{
+        bottom:150px;
+    }
+    .bulle1{
+        bottom: 193px;
+    }
+    #nProjet nav, #nProjet ul{
+        width: 380px;
+    }     
+    #nProjet a{
+        width: 95px;
+    }
+    #contact .formulaire{
+        width: 280px;
+        margin-right: 65px;
+    }
+    form input{
+        width: 220px;
+    }
+    form textarea{
+        width: 230px; 
+    }
+}
+@media screen and (max-width: 750px){   
+    .slo{
+        font-size: 15px;
+        left: 85px;
+        top: 0px;
+    }
+    .slides .fas::before{
+        height: 45px;
+        width: 25px;
+    }
+    .btn{
+        width: 80px;
+        height: 25px;
+    }
+    .btn a{
+        font-size: 15px;
+    }
+    #desktop img{
+        width: 250px;
+        height: 175px;
+    }
+    .details{
+        margin-left: 90px;
+        margin-top: 25px;
+    }
+    #desktop .fas::before{
+        font-size: 15px;
+        width: 15px;
+        height: 15px;
+        bottom:148px;
+        right: 80px;
+    }
+    .bulle1{
+        bottom: 182px;      
+        right: 30px;
+        border: 3px solid #fff;
+        width: 8px;
+        height: 8px;
+    }
+    #contact .formulaire{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 650px){
+    .tete{
+        flex-direction: column;
+        height: 110px;
+    }
+    .logo, .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        top: 19px;
+    }
+    .menu{
+        top: 4%;
+    }
+    .menu ul{
+        padding-left: 0px;
+    }
+    .menu li a:hover{
+        padding-top: 0px;        
+    }
+    .slides{
+        top: 20px;
+    }
+    .slides .fas::before{
+        height: 40px;
+        width: 20px;
+        font-size: 12px;          
+    }    
+    #desktop{
+        flex-direction: column;
+        margin-top: 8px;
+    }
+    #desktop img, .details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .details{
+        margin-top: 0px;
+    }
+    .details p{
+        word-wrap: break-word;
+    }
+    .slo{
+        display: none;
+    }
+    #contact{
+        overflow: visible;
+        height: 360px;
+    }    
+    #contact iframe{
+        position: relative;         
+        height: 360px;            
+    }         
+    #contact .formulaire{             
+        float: none;            
+        align-items: center;       
+        width: 100%;
+        height: 480px; 
+        background: #f5f5f5;  
+        top: 0px;          
+    }    
+    .formulaire form{
+        padding-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .info{
+        padding-left: 0px;
+        margin: 0px;
+    }    
+}
+@media screen and (max-width: 450px){
+    .details{
+        margin-right: 0px;
+    }
+    li{
+        padding: 5px;
+    }
+    #nProjet nav, #nProjet ul{
+        width: 273px;
+    }     
+}
+@media screen and (max-width: 420px){
+    #desktop .fas::before{
+        width: 7px;
+        height: 7px;
+        right: 65px;
+        bottom: 142px;
+    }
+    .bulle1{
+        bottom: 173px;
+        right: 24px;
+    }
+}
+@media screen and (max-width: 382px){
+    .details{
+        width: 100%;
+        text-align: center;
+    }
+    .ux, .ui, .seo{
+        height: 180px;
+    }
+    .ux{
+        margin-top: 48px;
+    }
+    .ui{
+        margin-top: 18px;
+    }    
+    #desktop .fas::before{
+        right: 0px;        
+        bottom: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #desktop .ui .fas::before{
+        bottom: 195px;
+    }  
+    #desktop .ui .bulle1{
+        bottom: 202px;
+    }  
+    .bulle1{
+        right: 0px;        
+        bottom: 228px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+    #nProjet a{
+        width: 75px;
+    }
+}
+/*=====fin responsive=====*/
+    
+
+    
+
+
+   
+
+
+
+    
+
+
+
+
+
+
+
