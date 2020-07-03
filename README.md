@@ -1,4 +1,4 @@
-# projet1-Int-grez-la-maquette-du-site-d-une-agence-web
+# projet1-Integration d'une maquette
 
 Dans le cadre d'une formation développeur web junior chez openclassrooms. 
 Compétences évaluées:
